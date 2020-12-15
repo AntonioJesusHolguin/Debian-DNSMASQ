@@ -9,7 +9,7 @@ dnsmasq has low requirements for system resources, can run on Linux, BSDs, Andro
 1. [What's dnsmasq?](#what)
 2. [How to install dnsmasq](#install)
 3. [How to configure dnsmasq](#config)
-4. [How does it work?](#work)
+4. [Testing Dnsmasq](#test)
 5. [References](#references)
 
 <a name="what"></a>
@@ -122,13 +122,13 @@ root@desktop:~# dig -x 10.0.0.30
 ;; WHEN: Tue Jul 16 13:52:54 JST 2019
 ;; MSG SIZE  rcvd: 78
 ```
-<a name="work"></a>
-## 4.- How does it work?
+<a name="test"></a>
+## 4.- Testing Dnsmasq
 After taking a closer look to study dnsmasq's files and how to configure them, let's create our own dns service step by step:
 
-1.-
+1.- In the first place, let's add an internal network adapter for our server's clients:
 
-
+![/images/1.png](/images/1.png)
 
 2.-
 
@@ -150,5 +150,5 @@ After taking a closer look to study dnsmasq's files and how to configure them, l
 
 <a name="references"></a>
 ## 5.- References
-- [Dnsmasq's wikipedia page](https://en.wikipedia.org/wiki/Dnsmasq#:~:text=dnsmasq%20(short%20for%20DNS%20masquerade,not%20in%20the%20global%20DNS.)
+- [Dnsmasq's wikipedia page](https://en.wikipedia.org/)
 - [How to install dnsmasq on Debian 10](https://www.server-world.info/en/note?os=Debian_10&p=dnsmasq&f=1)
