@@ -150,5 +150,5 @@ After taking a closer look to study dnsmasq's files and how to configure them, l
 
 <a name="references"></a>
 ## 5.- References
-- [dnsmasq's wikipedia page](https://en.wikipedia.org/wiki/Dnsmasq#:~:text=dnsmasq%20(short%20for%20DNS%20masquerade,not%20in%20the%20global%20DNS.)
+- [Dnsmasq's wikipedia page](https://en.wikipedia.org/wiki/Dnsmasq#:~:text=dnsmasq%20(short%20for%20DNS%20masquerade,not%20in%20the%20global%20DNS.)
 - [How to install dnsmasq on Debian 10](https://www.server-world.info/en/note?os=Debian_10&p=dnsmasq&f=1)
