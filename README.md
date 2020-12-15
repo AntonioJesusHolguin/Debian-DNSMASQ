@@ -1,8 +1,8 @@
 # Debian-DNSMASQ
 
-dnsmasq is free software providing Domain Name System (DNS) caching, a Dynamic Host Configuration Protocol (DHCP) server, router advertisement and network boot features, intended for small computer networks.
+Dnsmasq is free software providing Domain Name System (DNS) caching, a Dynamic Host Configuration Protocol (DHCP) server, router advertisement and network boot features, intended for small computer networks.
 
-dnsmasq has low requirements for system resources, can run on Linux, BSDs, Android and macOS, and is included in most Linux distributions. Consequently, it "is present in a lot of home routers and certain Internet of Things gadgets"[4] and is included in Android.
+Dnsmasq has low requirements for system resources, can run on Linux, BSDs, Android and macOS, and is included in most Linux distributions. Consequently, it "is present in a lot of home routers and certain Internet of Things gadgets"[4] and is included in Android.
 
 ## Index
 
@@ -14,11 +14,11 @@ dnsmasq has low requirements for system resources, can run on Linux, BSDs, Andro
 
 <a name="what"></a>
 ## 1.- What's dnsmasq?
-dnsmasq (short for DNS masquerade) is a lightweight, easy to configure DNS forwarder, designed to provide DNS (and optionally DHCP and TFTP) services to a small-scale network. It can serve the names of local machines which are not in the global DNS.
+Dnsmasq (short for DNS masquerade) is a lightweight, easy to configure DNS forwarder, designed to provide DNS (and optionally DHCP and TFTP) services to a small-scale network. It can serve the names of local machines which are not in the global DNS.
 
-dnsmasq's DHCP server supports static and dynamic DHCP leases, multiple networks and IP address ranges. The DHCP server integrates with the DNS server and allows local machines with DHCP-allocated addresses to appear in the DNS. dnsmasq caches DNS records, reducing the load on upstream nameservers and improving performance, and can be configured to automatically pick up the addresses of its upstream servers.
+Dnsmasq's DHCP server supports static and dynamic DHCP leases, multiple networks and IP address ranges. The DHCP server integrates with the DNS server and allows local machines with DHCP-allocated addresses to appear in the DNS. dnsmasq caches DNS records, reducing the load on upstream nameservers and improving performance, and can be configured to automatically pick up the addresses of its upstream servers.
 
-dnsmasq accepts DNS queries and either answers them from a small, local cache or forwards them to a real, recursive DNS server. It loads the contents of /etc/hosts, so that local host names which do not appear in the global DNS can be resolved. This also means that records added to your local /etc/hosts file with the format "0.0.0.0 annoyingsite.com" can be used to prevent references to "annoyingsite.com" from being resolved by your browser. This can quickly evolve to a local ad blocker when combined with adblocking site list providers. If done on a router, one can efficiently remove advertising content for an entire household or company.
+Dnsmasq accepts DNS queries and either answers them from a small, local cache or forwards them to a real, recursive DNS server. It loads the contents of /etc/hosts, so that local host names which do not appear in the global DNS can be resolved. This also means that records added to your local /etc/hosts file with the format "0.0.0.0 annoyingsite.com" can be used to prevent references to "annoyingsite.com" from being resolved by your browser. This can quickly evolve to a local ad blocker when combined with adblocking site list providers. If done on a router, one can efficiently remove advertising content for an entire household or company.
 
 <a name="install"></a>
 ## 2.- How to install dnsmasq
@@ -128,25 +128,23 @@ After taking a closer look to study dnsmasq's files and how to configure them, l
 
 1.- In the first place, let's add an internal network adapter for our server's clients:
 
-![/images/1.png](/images/1.png)
+![/images/1.PNG](/images/1.PNG)
 
-2.-
+2.- Configure the internal network:
 
+![/images/2.PNG](/images/2.PNG)
 
+3.- Restart networking service:
 
-3.-
+![/images/3.PNG](/images/3.PNG)
 
+4.- Let's configure /etc/dnsmasq.conf to configure the dhcp-range:
 
+![/images/4.PNG](/images/4.PNG)
 
-4.-
+5.- Restart dnsmasq service:
 
-
-
-5.-
-
-
-
-6.-
+![/images/5.PNG](/images/5.PNG)
 
 <a name="references"></a>
 ## 5.- References
